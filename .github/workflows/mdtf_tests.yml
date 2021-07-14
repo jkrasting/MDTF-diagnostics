@@ -8,10 +8,12 @@ on:
     branches:
       - main
       - develop
+      - testdata
   pull_request:
     branches:
       - main
       - develop
+      - testdata
 defaults:
   run:
     shell: bash -l {0}
