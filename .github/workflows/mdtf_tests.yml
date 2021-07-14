@@ -85,6 +85,7 @@ jobs:
         git clone https://github.com/jkrasting/mdtf_test_data.git
         # install the test data software
         cd mdtf_test_data
+        git rev-parse HEAD
         # Defining dependencies in Conda env is faster than pip
         conda activate _MDTF_synthetic_data
         # generate the data and run unit tests
