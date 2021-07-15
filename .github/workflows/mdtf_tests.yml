@@ -93,6 +93,8 @@ jobs:
         #./mdtf_test_data/mdtf_synthetic.py -c GFDL --startyear 1 --nyears 10 --unittest
         ./mdtf_test_data/mdtf_synthetic.py -c GFDL --startyear 1 --nyears 10
         ./mdtf_test_data/mdtf_synthetic.py -c NCAR --startyear 1975 --nyears 7
+        ncdump -h NCAR.Synthetic/mon/NCAR.Synthetic.PS.mon.nc
+        ncdump -v time NCAR.Synthetic/mon/NCAR.Synthetic.PS.mon.nc
         cd ../
         mkdir wkdir
     - name: Get Observational Data for Set 1
